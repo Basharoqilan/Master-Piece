@@ -31,7 +31,6 @@ Route::get('/about', function () {
     return view('user.about');
 });
 
-// my name is yousef jammal alsaidh
 
 
 

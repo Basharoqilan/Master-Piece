@@ -25,11 +25,19 @@ class ProductController extends Controller
             $query->where('price', '<=', $request->price_max);
         }
 
-        $products = $query->get();
+        $products = $query->paginate(12);
         $categories = Category::all();
 
         return view('user.product', compact('products', 'categories'));
     }
+
+
+
+
+
+
+
+
 
     public function show($id)
     {

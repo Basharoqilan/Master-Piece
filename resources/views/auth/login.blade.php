@@ -31,7 +31,23 @@
             border-radius: 0.5rem;
             font-size: 1rem;
         }
-       
+        .bg-gradient-primary {
+            background-image: linear-gradient(195deg, #1089ff 0%, #1089ff 100%);
+        }
+        .text-gradient.text-primary {
+            background-image: linear-gradient(195deg, #1089ff, #1089ff);
+        }
+        .shadow-primary {
+            box-shadow: 0 4px 10px 0 rgba(16,137, 255, 1) !important;
+        }
+        .btn-primary, .btn.bg-gradient-primary {
+            box-shadow: 0 4px 10px 0 rgba(16,137, 255, 1);
+        }
+        .btn-primary:hover, .btn.bg-gradient-primary:hover {
+            background-color: #1089ff;
+            border-color: #1089ff;
+            box-shadow: 0 14px 26px -12px rgb(16,137, 255, 1);
+        }
     </style>
 </head>
 
@@ -78,7 +94,7 @@
                                 @endif
 
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
+                                    <button type="submit" class="btn bg-gradient-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
                                 </div>
                             </form>
                             </div>
@@ -89,7 +105,7 @@
                                 </p>
                             </div>
                             <div style = "text-align: center">
-                                <p class="mb-2 text-sm mx-auto">
+                                <p class="mb-2 text-sm mx-auto"  >
                                     Go to home page :
                                     <a href="{{ route('home') }}" class="text-primary text-gradient font-weight-bold">Home</a>
                                 </p>

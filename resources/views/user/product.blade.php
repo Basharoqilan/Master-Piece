@@ -107,6 +107,9 @@
             </div>
         @endforeach
     </div>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        {{ $products->links('pagination::bootstrap-4') }}
+    </div>
 </main>
 <br>
 <br>

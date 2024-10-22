@@ -32,6 +32,20 @@
             border: 1px solid #ced4da;
             border-radius: 0.25rem;
         }
+        .btn-primary, .btn.bg-gradient-primary {
+            box-shadow: 0 3px 3px 0 rgba(16,137, 255, 1);
+        }
+        .bg-gradient-primary {
+            background-image: linear-gradient(195deg, #1089ff 0%, #1089ff 100%);
+        }
+        .btn-primary:hover, .btn.bg-gradient-primary:hover {
+            background-color: #1089ff;
+            border-color: #1089ff;
+            box-shadow: 0 14px 26px -12px rgba(16,137, 255, 1);
+        }
+        .text-gradient.text-primary {
+            background-image: linear-gradient(195deg, #1089ff, #1089ff);
+        }
     </style>
 </head>
 
